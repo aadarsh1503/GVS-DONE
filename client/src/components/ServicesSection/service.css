@@ -1,0 +1,9 @@
+/* Hero.css or any appropriate CSS file */
+.outline-text {
+    color: black; /* Set text color to black */
+    text-shadow: 
+      -3px -3px 0 white,  
+      3px -3px 0 white,
+      -3px 3px 0 white,
+      3px 3px 0 white; /* Create the thicker outline effect */
+}

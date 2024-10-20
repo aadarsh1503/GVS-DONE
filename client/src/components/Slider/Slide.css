@@ -1,0 +1,29 @@
+/* src/slide.css */
+
+/* Customize slide item */
+.slide-item {
+    padding: 10px;
+}
+
+/* Hide scrollbar for all browsers */
+.slick-slider {
+    overflow: hidden;
+}
+
+/* Additional styles for image size */
+.slide-item img {
+    width: 100%; /* Ensure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure images are fully visible */
+}
+
+/* Customize slick arrows for a better look */
+.slick-prev, .slick-next {
+    z-index: 1; /* Ensure arrows are above the images */
+    color: #333; /* Change arrow color */
+}
+
+/* Remove slick dots */
+.slick-dots {
+    display: none;
+}

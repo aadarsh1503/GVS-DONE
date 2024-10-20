@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+@keyframes powerhouseZoom {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6); /* Blue glow */
+  }
+  50% {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8); /* Intense blue glow */
+  }
+}
+  
+  .animate-powerhouse {
+    animation: powerhouseZoom 8s ease-in-out infinite;
+  }
+  .font-bebas {
+    letter-spacing: -0em; /* This brings the letters closer */
+  }
+  /* Hero.css */
+/* Import Bebas Neue */
+
+:root {
+  --fontSizes-128: 8rem; /* Adjust based on your needs */
+  --letterSpacings-1: -2em; /* Adjust based on your needs */
+  --linkUnderlineHeight: 6px;
+  --textUnderlineOffset: 6px;
+}
+
+h10 {
+  font-family: 'Bebas Neue', sans-serif; /* Apply the Bebas Neue font family */
+  font-size: var(--fontSizes-128);
+  letter-spacing: var(--letterSpacings-1);
+  line-height: 0.85;
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -var(--linkUnderlineHeight);
+  height: var(--linkUnderlineHeight);
+  width: 100%;
+  background-color: currentColor; /* Matches the text color */
+  transform: translateX(var(--textUnderlineOffset));
+}
+
+/* Animation for POWERHOUSE text */
+@keyframes powerhouseZoom {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6); /* Blue glow */
+  }
+  50% {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8); /* Intense blue glow */
+  }
+}
+
+.animate-powerhouse {
+  animation: powerhouseZoom 8s ease-in-out infinite;
+}
+.hero-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+

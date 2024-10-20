@@ -1,0 +1,25 @@
+/* animations.css */
+
+/* Base styles for the animations */
+.slide-in-left {
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50%); /* Start slightly off-screen */
+  transition: opacity 0.5s ease-in, transform 1.5s ease-in; /* Simplified transition */
+}
+
+.slide-in-right {
+  opacity: 0; /* Start invisible */
+  transform: translateX(50%); /* Start slightly off-screen */
+  transition: opacity 0.5s ease-in, transform 1.5s ease-in; /* Simplified transition */
+}
+
+/* Styles when the section becomes visible */
+.is-visible.slide-in-left {
+  opacity: 1; /* Fade in */
+  transform: translateX(0); /* Move to the center */
+}
+
+.is-visible.slide-in-right {
+  opacity: 1; /* Fade in */
+  transform: translateX(0); /* Move to the center */
+}
