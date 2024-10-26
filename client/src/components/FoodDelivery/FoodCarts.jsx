@@ -2,10 +2,10 @@ import React from 'react';
 
 const Card = ({ title, description, image }) => {
   return (
-    <div className="bg-black shadow-lg rounded-lg p-6 transition-all bg- duration-300 transform hover:scale-105">
-      <img src={image} alt={title} className="w-full h-40 object-cover mb-4 rounded-md border-2 border-gray-300 shadow-md" />
-      <h3 className="text-2xl font-semibold mb-2 text-white">{title}</h3>
-      <p className="text-white text-base leading-relaxed">{description}</p>
+    <div className="bg-white shadow-lg rounded-lg p-6 transition-all bg- duration-300 transform hover:scale-105">
+      <img src={image} alt={title} className="w-full h-40 lg:h-64 object-cover mb-4 rounded-md border-2 border-gray-300 shadow-md" />
+      <h3 className="text-2xl font-semibold mb-2 text-black">{title}</h3>
+      <p className="text-black text-base leading-relaxed">{description}</p>
     </div>
   );
 };
@@ -21,8 +21,8 @@ const FoodCarts = () => {
   ];
 
   return (
-    <div className=" py-16 px-4 bg-black sm:px-6 lg:px-8">
-      <h2 className="text-4xl mx-auto max-w-4xl  font-bold text-center text-white mb-2">
+    <div className=" py-16 px-4 bg-white sm:px-6 lg:px-8">
+      <h2 className="text-4xl mx-auto max-w-4xl  font-bold text-center text-black mb-2">
       Start, Scale and Grow your Food Business <span className="text-blue-500">With GSV</span> 
       </h2>
       <p className='mt-4 lg:ml-72 mb-12 font-serif text-white'>Whether you own a small bakery or a 5-star restaurant, our food delivery applications are designed for all kinds of businesses in the food industry.
@@ -33,11 +33,7 @@ const FoodCarts = () => {
           <Card key={index} title={card.title} description={card.description} image={card.image} />
         ))}
       </div>
-      <div className="flex justify-center mt-12">
-        <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-orange-600 hover:to-red-600 transition-all duration-300">
-          Book a Demo
-        </button>
-      </div>
+     
     </div>
   );
 };

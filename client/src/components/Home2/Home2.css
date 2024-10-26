@@ -1,0 +1,11 @@
+/* Hero.css or any appropriate CSS file */
+.outline-text {
+    color: white; /* Set text color to white */
+    text-shadow: 
+      -5px -5px 0 rgb(0, 0, 0),  
+      5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0); /* Create the thicker outline effect */
+    letter-spacing: 5px; /* Adjust this value for subtle spacing between letters */
+  }
+  

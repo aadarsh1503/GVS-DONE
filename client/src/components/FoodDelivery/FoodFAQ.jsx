@@ -40,8 +40,8 @@ const FoodFAQ = () => {
   };
 
   return (
-    <div className=" bg-black mx-auto py-12 px-4">
-      <h2 className="text-center  text-4xl font-bold mb-10 text-white">
+    <div className=" bg-white mx-auto py-12 px-4">
+      <h2 className="text-center  text-4xl font-bold mb-10 text-black">
         Frequently <span className="text-blue-500">Asked Questions</span>
       </h2>
       <div className="space-y-6 max-w-4xl mx-auto">

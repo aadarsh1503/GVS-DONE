@@ -45,14 +45,14 @@ const FoodService = () => {
   const [selectedService, setSelectedService] = useState(services[0]);
 
   return (
-    <div className="py-10 bg-black rounded-xl ">
+    <div className="py-10 bg-white rounded-xl ">
       {/* Heading for the section */}
-      <h2 className="text-3xl font-bold text-center rounded-xl text-white mb-2">
+      <h2 className="text-3xl font-bold text-center rounded-xl text-black mb-2">
         Why Choose <span className="text-blue-500">GSV </span>?
       </h2>
   
       {/* Subheading line */}
-      <p className="text-lg text-center text-white rounded-xl mb-8">
+      <p className="text-lg text-center text-black rounded-xl mb-8">
       We are a leading on demand food delivery app development company and believe in “Delivering Value for Money” <br />and hence our Solutions are best suited for Entrepreneurs , Small Businesses and young Startups.
 
 

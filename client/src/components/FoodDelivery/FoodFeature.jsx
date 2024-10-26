@@ -57,9 +57,9 @@ const FoodFeature = () => {
   const imageToShow = hoveredFeature ? hoveredFeature.image : currentSection.features[0].image;
 
   return (
-    <div className="flex flex-col  bg-black mx-auto py-12 px-4">
+    <div className="flex flex-col  bg-white mx-auto py-12 px-4">
       {/* Heading */}
-      <h2 className="text-4xl font-bold  mb-9 text-center text-white">
+      <h2 className="text-4xl font-bold  mb-9 text-center text-black">
         Features Of Our  <span className="text-blue-500">On-demand Food Delivery</span> Solution
       </h2>
       {/* Subtitle */}
@@ -67,7 +67,7 @@ const FoodFeature = () => {
       
       <div className="flex flex-col max-w-7xl mx-auto md:flex-row w-full items-stretch">
   {/* Sidebar */}
-  <div className="md:w-1/3 bg-gradient-to-r from-blue-500 to-blue-300 rounded-l-lg py-8 px-6 text-white shadow-lg">
+  <div className="md:w-1/3 bg-gradient-to-r from-blue-500 to-blue-300 rounded-l-lg py-8 px-6 text-black shadow-lg">
   <div className="table w-full">
     <div className="table-header-group">
       <div className="table-row">
@@ -87,7 +87,7 @@ const FoodFeature = () => {
           <div
             className={`table-cell  items-center py-6 border-b border-white/30 transition-all duration-300 ${
               activeSection?.name === section.name
-                ? "bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg scale-105"
+                ? "bg-gradient-to-r from-blue-600 to-blue-800 text-black shadow-lg scale-105"
                 : "text-white hover:text-white hover:bg-opacity-70 hover:bg-gradient-to-r from-orange-300 to-red-300"
             }`}
           >

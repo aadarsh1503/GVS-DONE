@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { FaPaintBrush, FaUserCog, FaShapes } from 'react-icons/fa';
+
 import "./Product.css";
 
 const ProductDesign = () => {
@@ -24,10 +26,10 @@ const ProductDesign = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="bg-black text-white min-h-screen flex flex-col justify-center px-12">
+    <div ref={sectionRef} className="bg-white text-black min-h-screen flex flex-col justify-center px-4 lg:px-12">
       {/* Main heading */}
       <div className="text-center">
-        <h1 className={`lg:text-10xl font-extrabold font-bebas ${isVisible ? 'animate-slide-in' : ''}`}>
+        <h1 className={`lg:text-7xl text-5xl font-bold lg:mt-32 font-bebas ${isVisible ? 'animate-slide-in' : ''}`}>
           PRODUCT <span className='outline-text'>DESIGN</span>
         </h1>
       </div>
@@ -35,7 +37,7 @@ const ProductDesign = () => {
       {/* Subtext area */}
       <div className="flex justify-center text-center mt-8">
         <div className="space-y-4 max-w-3xl">
-          <p className="text-xl">
+          <p className="text-lg lg:text-xl">
             At GSV, we excel in crafting innovative product designs that resonate with users and elevate brand identity. 
             Our approach combines user-centered design principles with cutting-edge technology to deliver outstanding products.
             <span className="text-gray-400 text-sm ml-2">(DESIGNING FOR IMPACT)</span>
@@ -44,10 +46,10 @@ const ProductDesign = () => {
       </div>
 
       {/* Video with profile and information */}
-      <div className="flex justify-center items-center mt-12 space-x-12">
+      <div className="flex flex-col lg:flex-row justify-center items-center mt-12 space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Video element */}
         <div className="flex flex-col items-center">
-          <div className="relative w-96 h-56">
+          <div className="relative w-80 lg:w-96 h-48 lg:h-56">
             <video
               src="https://videos.pexels.com/video-files/27668091/12198946_640_360_25fps.mp4" // Replace with your video source related to product design
               autoPlay
@@ -56,8 +58,8 @@ const ProductDesign = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="text-center mt-4">
-            <span className="font-bold">JESSICA SMITH</span>, Head of Product Design
+          <div className="text-center mt-2">
+            <span className="font-bold text-white">JESSICA SMITH</span>, Head of Product Design
           </div>
         </div>
 
@@ -86,6 +88,18 @@ const ProductDesign = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-12 max-w-xl mx-auto bg-white text-black p-6 rounded-lg">
+        <h2 className="text-black text-4xl font-bebas text-center mb-6">
+          Explore Our Product Design Services
+        </h2>
+        <div className="flex justify-center space-x-4">
+          <a href="/designProduct" className="flex flex-col items-center transition duration-300 ease-in-out transform outline-2 border outline hover:bg-teal-400 hover:text-black rounded-md p-4">
+            <FaUserCog className="text-black text-3xl mb-2" />
+            <span className="text-black hover:text-black text-center">User Experience Design</span>
+          </a>
         </div>
       </div>
     </div>

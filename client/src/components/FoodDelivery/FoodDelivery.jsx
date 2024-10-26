@@ -16,15 +16,15 @@ const FoodDelivery = () => {
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
             <div className=" min-h-screen ">
                 {/* First Section (UberEATS Clone App Development) */}
-                <section className="flex flex-col py-32  bg-black md:flex-row items-center justify-center ">
+                <section className="flex flex-col py-32  bg-white md:flex-row items-center justify-center ">
                     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
                         {/* Left Section */}
                         <div className="max-w-lg space-y-5 mb-6 md:mb-0 md:mr-6">
-                            <h1 className="text-4xl font-bold text-white">
+                            <h1 className="text-4xl font-bold text-black">
                                 On Demand<span className='text-blue-600'> Food Delivery App</span> Development
                             </h1>
 
-                            <p className="text-white">
+                            <p className="text-black">
                                 Launch your own app like DoorDash, GrubHub, Zomato with our on demand food delivery app development services. From planning to promotion, receive expert consultation at every step, backed by top industry leaders.
                             </p>
                             <div>
@@ -33,10 +33,10 @@ const FoodDelivery = () => {
                                 <li>100% Secure & Customizable</li>
                             </div>
                             <a
-                                href="#"
+                                href="/contactUs"
                                 className="inline-block bg-[#007bff] text-white py-3 px-6 rounded-xl font-serif hover:bg-blue-900"
                             >
-                                Book a Free Demo
+                                Contact Us
                             </a>
                         </div>
 
@@ -51,10 +51,10 @@ const FoodDelivery = () => {
                     </div>
                 </section>
 
-                <section className="py-12 bg-black">
+                <section className="py-12 bg-white">
                     <div className="max-w-9xl mx-auto text-center px-10">
-                        <h2 className="text-3xl font-bold text-white">Various <span className='text-[#007bff]'>Food Business Models</span> We Serve</h2>
-                        <p className="mt-2 text-white font-serif">
+                        <h2 className="text-3xl font-bold text-black">Various <span className='text-[#007bff]'>Food Business Models</span> We Serve</h2>
+                        <p className="mt-2 text-black font-serif">
                             Whether you need an app for your restaurant or want to start your food marketplace like Food Delivery, we've got you covered!
                         </p>
                     </div>
@@ -108,9 +108,9 @@ const FoodDelivery = () => {
 
 
                 {/* Second Section */}
-                <section className="py-10 bg-black">
+                <section className="py-10 bg-white">
                     <div className="max-w-7xl mx-auto text-center">
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-black">
                             The Difference We Make: <span className="text-blue-500">Impact of Our Services</span>
                         </h2>
                     </div>
@@ -150,9 +150,9 @@ const FoodDelivery = () => {
 
                 <FoodFAQ />
 
-                <section className="py-16 bg-black">
+                <section className="py-16 bg-white">
                     <div className="max-w-7xl mx-auto px-4 text-center">
-                        <h2 className="text-3xl font-bold font-serif text-white mb-4">
+                        <h2 className="text-3xl font-bold font-serif text-black mb-4">
                             Recent <span className="text-[#007bff]">Blogs</span>
                         </h2>
                         <p className="text-white">

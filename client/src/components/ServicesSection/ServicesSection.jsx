@@ -1,51 +1,56 @@
 import React from 'react';
-import "./service.css";
 import VariousServices from './VariousServices';
-import ProductManagementSection from './ProductManagemnet';
+import ProductManagementSection from './ProductManagement'; // Fixed typo in import
 import ProductDesign from './ProductDesign';
 import MobileDevelopment from './MobileDevelopment';
 import WebDevelopment from './WebDevelopment';
 
+// ServiceSection Component
 const ServiceSection = () => {
   return (
-    <div>
-    <div className="bg-black text-white min-h-screen flex font-bebas flex-col items-center justify-center">
-      {/* Top Text */}
-      <div className="flex items-center space-x-4 text-xl sm:text-6xl md:text-8xl lg:text-11xl font-bold">
-        <span className="outline-text">WE BUILD</span>
-        <span className='pl-3' >SOFTWARE</span>
-      </div>
-      
-      {/* Middle Section with Video and Solutions Text */}
-      <div className="flex items-center justify-center my-8">
-        <div className=" p-4 rounded-full">
-          <video
-            src="https://videos.pexels.com/video-files/8087013/8087013-sd_360_640_25fps.mp4" // Replace this with your video URL
-            autoPlay
-            muted
-            loop
-            className="w-32 h-32 rounded-full object-cover"
-          />
+    <div className="relative bg-white text-black min-h-screen flex flex-col items-center">
+      {/* Full-Height Hero Section */}
+      <div className="flex flex-col md:flex-row items-center justify-between w-full h-screen bg-white text-black text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start md:w-1/2 p-4">
+          <h1 className="text-5xl md:text-8xl font-bold leading-tight mb-4">WE BUILD</h1>
+          <h2 className="text-4xl md:text-6xl font-semibold mb-8">SOFTWARE SOLUTIONS</h2>
+          <p className="text-lg md:text-xl max-w-2xl mb-3">
+            Crafting innovative and tailored software solutions to elevate your business.
+          </p>
+
+          {/* Service Descriptions */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-gray-700 text-md font-poppins text-left">
+              Our innovative product design process focuses on transforming ideas into impactful products. 
+              We ensure that each design resonates with users while meeting business objectives effectively.
+            </p>
+          </div>
+
+          {/* Scroll Instruction */}
+          <div className="mt-6 text-lg text-gray-600">↓ SCROLL TO LEARN HOW</div>
         </div>
-        <div className="sm:text-6xl lg:text-11xl md:text-8xl font-bold ml-4"> {/* Added margin-left for spacing */}
-          <span>SOLUTIONS</span>
+        
+        {/* Video Section for Desktop, Image for Mobile */}
+        <div className="flex-shrink-0 md:w-1/2 md:h-2/3 flex justify-center p-4">
+          {/* Video for larger screens */}
+          
+          {/* Image for mobile screens */}
+          <img
+            src="https://img.freepik.com/free-photo/website-hosting-concept-with-bright-light_23-2149406783.jpg?t=st=1729915847~exp=1729919447~hmac=185c7c3264a193fbd012eec8e2c0d129c9f395f84a2e9476b30c352f69477b45&w=1380" // Replace this with your image URL
+            alt="Service Illustration" // Alternative text for accessibility
+            className="block  w-full h-full object-cover rounded-md shadow-lg"
+          />
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="absolute bottom-5 left-5 text-xl">
-        <span>↓ SCROLL TO LEARN HOW</span>
-      </div>
-      <div className="absolute bottom-5 right-5 text-xl">
-        <span>✱ 4 SERVICES AVAILABLE</span>
-      </div>
-      
-    </div>
-    <VariousServices />
-    <ProductManagementSection />
-    <ProductDesign />
-    <MobileDevelopment />
-    <WebDevelopment />
+      {/* Footer Section */}
+    
+      {/* Service Components */}
+      <VariousServices />
+      <ProductManagementSection />
+      <ProductDesign />
+      <MobileDevelopment />
+      <WebDevelopment />
     </div>
   );
 };
