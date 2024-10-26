@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MdCalendarToday, MdCode, MdSettings, MdShoppingCart, MdLaunch } from 'react-icons/md'; // Import relevant icons
-import './flipcard.css'; // Import the CSS file
+import './Flipcard.css'; // Import the CSS file
 import { FaJsSquare,FaApple ,FaAndroid ,FaMobileAlt ,FaUserFriends  } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
