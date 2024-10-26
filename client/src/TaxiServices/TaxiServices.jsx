@@ -4,18 +4,6 @@ import { faDollarSign, faMapMarkedAlt, faPaperPlane,  faTaxi } from '@fortawesom
 
 
 
-import ride from "../../src/assets/Images/ride.png";
-import app from "../../src/assets/Images/app3.jpg";
-import Taxi from "../../src/assets/Images/taxiservice.jpg";
-import chauffer from "../../src/assets/Images/chauffer.jpg";
-import pay from "../../src/assets/Images/paydriver.jpg";
-import cab from "../../src/assets/Images/cabprovider.jpg";
-import del from "../../src/assets/Images/deliveryprovider.jpg";
-import aptax from "../../src/assets/Images/apptaxi.jpg";
-import ssl from "../../src/assets/Images/ssl.jpg";
-import reg from "../../src/assets/Images/register.png";
-import car from "../../src/assets/Images/car.png";
-import diagram from "../../src/assets/Images/diagram1.png";
 
 
 
