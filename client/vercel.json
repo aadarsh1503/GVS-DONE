@@ -1,11 +1,11 @@
 {
     "build": {
-      "outputDirectory": "dist"
+      "outputDirectory": ""
     },
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/$1"
+        "dest": "/index.html"
       }
     ]
   }
