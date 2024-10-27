@@ -5,6 +5,7 @@ import WhyChooseUs from '../WhyChooseUs/WhyChooseUs'
 import Testimonals from '../Testimonals/Testimonals'
 import ContactForm from '../Contactus/Contactus'
 import Slide from '../Slider/Slider'
+import ServiceDifferentiators from '../ServiceDifferentiators/ServiceDifferentiators'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
 <Slide />
 <Hero1 />
 <WhyChooseUs />
+<ServiceDifferentiators />
 <Testimonals />
 <ContactForm />
 
