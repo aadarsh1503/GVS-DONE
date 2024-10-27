@@ -3,6 +3,7 @@ import { MdCalendarToday, MdCode, MdSettings, MdShoppingCart, MdLaunch } from 'r
 import './Flipcard.css'; // Import the CSS file
 import { FaJsSquare,FaApple ,FaAndroid ,FaMobileAlt ,FaUserFriends  } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import Web from "./Web.jpg"
 
 const Hero1 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -112,7 +113,7 @@ const Hero1 = () => {
           <div className={`lg:w-1/2 flex  items-center justify-end ${isVisible ? 'slide-in-left is-visible' : 'slide-in-left'}`}>
             <div className="relative  rounded-lg overflow-hidden">
               <img
-                src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010119.jpg?t=st=1729999760~exp=1730003360~hmac=e1840bb6adabce4e853a22e0f93c82aab5c1b60b89c2aadf6867f4cca7182cd1&w=996"
+                src={Web}
                 alt=""
                 className="w-full lg:h-[400px] lg:w-[1500px] h-auto"
               />

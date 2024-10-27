@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faUtensils, faMobileAlt, faUsers, faShieldAlt, faSyncAlt, faChartBar, faClipboardList, faCheckCircle, faFileAlt, faThLarge, faCreditCard, faDollarSign, faMapMarkerAlt, faBell, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import App2 from "./App2.jpg"
+import taxi from "./taxi.jpg"
 
 const MobileAppDevSection = () => {
     return (
@@ -34,7 +36,7 @@ const MobileAppDevSection = () => {
                         <div className="relative w-full lg:w-[600px] md:w-[600px] h-[400px] overflow-hidden rounded-lg">
                             <img
                                 className="absolute w-full h-full object-cover rounded-lg"
-                                src="https://img.freepik.com/free-photo/smartphone-with-user-interface-concept_52683-104211.jpg?t=st=1730001261~exp=1730004861~hmac=321b48556f783a83b60e84618313cb7b925a75d7749178b6783ad25c4993290e&w=996" // Placeholder image URL
+                                src={App2} // Placeholder image URL
                                 alt="Mobile App Development"
                             />
                         </div>
@@ -54,10 +56,10 @@ const MobileAppDevSection = () => {
 
                     <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
                         {/* Left Section: App Image */}
-                        <div className="relative w-full lg:h-96 lg:w-96 lg:mr-20 h-64 overflow-hidden mb-6 lg:mb-0">
+                        <div className="relative w-full lg:h-96 lg:w-[500px] lg:mr-20 h-64 overflow-hidden mb-6 lg:mb-0">
                             <img
                                 className="absolute w-full h-full object-fill rounded-lg"
-                                src="https://img.freepik.com/free-photo/yellow-black-sign-taxi-placed-top-car-night_181624-10624.jpg?t=st=1730001316~exp=1730004916~hmac=9b85c520e26bbdb3b45fbaf75292313b31e725c9b6b2753d67a4177e241b1479&w=996" // Placeholder image URL
+                                src={taxi} // Placeholder image URL
                                 alt="Mobile App Example"
                             />
                         </div>

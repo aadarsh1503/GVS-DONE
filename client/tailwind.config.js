@@ -14,6 +14,13 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'], // Add this line
       },
+      colors: {
+        customBlue: '#39c1f2',
+    },
+    borderWidth: {
+      40: '40px', // Add custom border width of 40px
+      20: '20px',
+  },
     },
   },
   plugins: [],

@@ -21,6 +21,7 @@ import Company from './components/Company/Company';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
+import ServiceDifferentiators from './components/ServiceDifferentiators/ServiceDifferentiators';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/company" element={<Company />} />
             <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
             <Route path="/termsConditions" element={<TermsAndConditions />} />
+            <Route path="/serviceDifferentiators" element={<ServiceDifferentiators />} />
 
             {/* Redirect to Dashboard or Admin */}
             <Route

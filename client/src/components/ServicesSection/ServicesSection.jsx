@@ -4,6 +4,7 @@ import ProductManagementSection from './ProductManagement'; // Fixed typo in imp
 import ProductDesign from './ProductDesign';
 import MobileDevelopment from './MobileDevelopment';
 import WebDevelopment from './WebDevelopment';
+import App from "./App.jpg"
 
 // ServiceSection Component
 const ServiceSection = () => {
@@ -36,7 +37,7 @@ const ServiceSection = () => {
           
           {/* Image for mobile screens */}
           <img
-            src="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038906.jpg?t=st=1730001133~exp=1730004733~hmac=21020e97f8ae6be8b5ad882ce42d39a38eecdeff47c3bb90443b15e299c4aec9&w=996" // Replace this with your image URL
+            src={App} // Replace this with your image URL
             alt="Service Illustration" // Alternative text for accessibility
             className="block  w-full h-full object-cover rounded-md shadow-lg"
           />

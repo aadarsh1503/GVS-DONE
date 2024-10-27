@@ -51,7 +51,12 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <AiOutlineHome className="text-3xl text-black" />
-          <span className="text-2xl font-semibold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-800 text-transparent bg-clip-text">Global Vision Solution</span>
+          <span 
+        className="text-2xl font-semibold" 
+        style={{ color: '#1388c2' }} // Set the new color here
+      >
+        Global Vision Solution
+      </span>
         </div>
 
         {/* Mobile Menu Button */}
