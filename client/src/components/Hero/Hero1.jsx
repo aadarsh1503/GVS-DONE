@@ -112,8 +112,8 @@ const Hero1 = () => {
           <div className={`lg:w-1/2 flex  items-center justify-end ${isVisible ? 'slide-in-left is-visible' : 'slide-in-left'}`}>
             <div className="relative  rounded-lg overflow-hidden">
               <img
-                src="https://askingtips.com/dl/getty/tmp/low_quality-WaEcYt1Bhy.jpg"
-                alt="Customer Communication"
+                src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010119.jpg?t=st=1729999760~exp=1730003360~hmac=e1840bb6adabce4e853a22e0f93c82aab5c1b60b89c2aadf6867f4cca7182cd1&w=996"
+                alt=""
                 className="w-full lg:h-[400px] lg:w-[1500px] h-auto"
               />
             </div>
@@ -197,8 +197,7 @@ const Hero1 = () => {
     <div className={`lg:w-1/2 flex items-center justify-end ${isVisible ? 'slide-in-left is-visible' : 'slide-in-left'}`}>
         <div className="relative rounded-lg overflow-hidden">
             <img
-                src="https://img.freepik.com/free-vector/app-development-landing-page-template_52683-48083.jpg?t=st=1729880335~exp=1729883935~hmac=2ed364d55438022f79e6c717dbc7961a76e424d2e5cbb34ad76625cbc68b97af&w=996"
-                alt="Mobile App Development"
+                src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169864.jpg?t=st=1729999952~exp=1730003552~hmac=b68b6c7628e7ffce88d8c95741c7c5bdd02a299d8967038e0274027414f8a04a&w=1060"
                 className="w-full h-auto"
             />
         </div>

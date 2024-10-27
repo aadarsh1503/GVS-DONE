@@ -52,7 +52,7 @@ const Design = () => {
     <div className="relative w-full lg:w-[600px] md:w-[600px] h-[400px] overflow-hidden rounded-lg">
       <img
         className="absolute w-full h-full object-contain rounded-lg"
-        src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052118.jpg?t=st=1729915019~exp=1729918619~hmac=d4e4d98222dc57b8f6625fdefa3a53815c777db67691aa5ed73a7ac3bc938a02&w=996"
+        src="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104479.jpg?t=st=1730001596~exp=1730005196~hmac=6ae09abce84d53d75654cfdf7ffc3096ea3f1b5c1d2993c0f216426696d0d979&w=900"
         alt="Product Design Solutions"
       />
     </div>

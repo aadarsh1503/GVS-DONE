@@ -62,7 +62,7 @@ const WebDevSection = () => {
                         <div className="relative w-full lg:h-96 lg:w-[500px] lg:mr-20 h-64 overflow-hidden mb-6 lg:mb-0">
                             <img
                                 className="absolute w-full h-full object-fill rounded-lg"
-                                src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?t=st=1729522733~exp=1729526333~hmac=5b3a7f1a3fc3d3bdbf28275af9e0b99279118828279645406cabe98e18d1bb28&w=996" // Replace with your image URL
+                                src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?t=st=1730001476~exp=1730005076~hmac=582f2b21d97ef6a159854f65a82acfce404a99da83f26582c7a9f27bae08a8c2&w=826" // Replace with your image URL
                                 alt="Web Development Example"
                             />
                         </div>

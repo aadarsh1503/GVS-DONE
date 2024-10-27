@@ -7,7 +7,7 @@ const AdminData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/admin');
+        const response = await fetch('https://gsv-12-4.onrender.com/api/admin');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -28,7 +28,7 @@ const AdminData = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/${id}`, {
+      const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/${id}`, {
         method: 'DELETE',
       });
 

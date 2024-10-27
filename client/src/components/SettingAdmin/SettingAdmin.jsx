@@ -28,7 +28,7 @@ const AdminSettings = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/admin/register', {
+      const response = await fetch('https://gsv-12-4.onrender.com/api/admin/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const AdminSettings = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/${userId}`, {
+      const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/${userId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${authToken}`,

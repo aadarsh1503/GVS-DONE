@@ -33,8 +33,8 @@ const BlogForm = ({ initialData, isEditing }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const apiEndpoint = isEditing
-      ? `http://localhost:5000/api/blogs/${initialData.id}`
-      : 'http://localhost:5000/api/blogs';
+      ? `https://gsv-12-4.onrender.com/api/blogs/${initialData.id}`
+      : 'https://gsv-12-4.onrender.com/api/blogs';
 
     const method = isEditing ? 'PATCH' : 'POST'; // Use PATCH for editing
 

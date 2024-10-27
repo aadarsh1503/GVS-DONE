@@ -10,7 +10,7 @@ const Testimonials = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/testimonials"); // Adjust the URL to your API endpoint
+        const response = await fetch("https://gsv-12-4.onrender.com/api/testimonials"); // Adjust the URL to your API endpoint
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

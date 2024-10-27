@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/Blogs');
+        const response = await fetch('https://gsv-12-4.onrender.com/api/Blogs');
         const data = await response.json();
         setBlogs(data); // assuming the data is in array format
         setLoading(false);

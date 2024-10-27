@@ -10,7 +10,7 @@ const TestimonialsList = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/testimonials"); // GET request
+        const response = await fetch("https://gsv-12-4.onrender.com/api/testimonials"); // GET request
         if (!response.ok) throw new Error('Failed to fetch testimonials');
         const data = await response.json();
         setTestimonials(data); // Set the fetched testimonials to state
@@ -24,7 +24,7 @@ const TestimonialsList = () => {
 
   // Handle PATCH request to update the testimonial
   const handleUpdateTestimonial = (testimonialId, updatedData) => {
-    fetch(`http://localhost:5000/api/testimonials/${testimonialId}`, {
+    fetch(`https://gsv-12-4.onrender.com/api/testimonials/${testimonialId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const TestimonialsList = () => {
 
   // Handle DELETE request to delete the testimonial
   const handleDelete = (testimonialId) => {
-    fetch(`http://localhost:5000/api/testimonials/${testimonialId}`, {
+    fetch(`https://gsv-12-4.onrender.com/api/testimonials/${testimonialId}`, {
       method: 'DELETE',
     })
       .then((response) => {

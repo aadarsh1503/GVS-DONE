@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // Import Navigate for redirection
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import RootLayout from './components/RootLayout/Rootlayout';
@@ -23,13 +23,12 @@ import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
 
 function App() {
-  const isAuthenticated = localStorage.getItem('token'); // Check if token exists
-
   return (
     <AuthProvider> {/* Wrap everything inside AuthProvider */}
       <Router>
         <RootLayout>
           <Routes>
+            {/* Public Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<PortfolioSection />} />
             <Route path="/testimonials" element={<Testimonials />} />
@@ -46,12 +45,22 @@ function App() {
             <Route path="/company" element={<Company />} />
             <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
             <Route path="/termsConditions" element={<TermsAndConditions />} />
+
+            {/* Redirect to Dashboard or Admin */}
             <Route
               path="/admin"
-              element={isAuthenticated ? <Navigate to="/dashboard/homeAdmin" replace /> : <Login />} // Redirect to dashboard if authenticated
+              element={!localStorage.getItem('token') ? <Login /> : <Navigate to="/dashboard" replace />}
             />
-            {/* Protect the Dashboard route */}
-            <Route path="/dashboard/*" element={<PrivateRoute element={<Dashboard />} />} />
+
+            {/* Protected Route for Dashboard */}
+            <Route
+              path="/dashboard/*"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            />
           </Routes>
         </RootLayout>
       </Router>

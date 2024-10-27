@@ -22,7 +22,7 @@ const EditBlogForm = ({ blog, onUpdate, onCancel }) => {
 
   const updateBlog = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blogs/${blog._id}`, {
+      const response = await fetch(`https://gsv-12-4.onrender.com/api/blogs/${blog._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ const BlogList = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/blogs');
+      const response = await fetch('https://gsv-12-4.onrender.com/api/blogs');
       if (!response.ok) {
         throw new Error('Failed to fetch blogs');
       }
@@ -172,7 +172,7 @@ const BlogList = () => {
   // Handle deleting a blog
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`https://gsv-12-4.onrender.com/api/blogs/${id}`, {
         method: 'DELETE',
       });
 

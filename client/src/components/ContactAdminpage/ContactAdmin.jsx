@@ -11,7 +11,7 @@ const ContactAdmin = () => {
     useEffect(() => {
         const fetchContactDetails = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/contact/');
+                const response = await fetch('https://gsv-12-4.onrender.com/api/contact/');
                 if (!response.ok) {
                     throw new Error('Failed to fetch contacts');
                 }
@@ -29,7 +29,7 @@ const ContactAdmin = () => {
 
     const deleteContact = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/contact/${id}`, {
+            const response = await fetch(`https://gsv-12-4.onrender.com/api/contact/${id}`, {
                 method: 'DELETE',
             });
 

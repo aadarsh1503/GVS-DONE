@@ -18,7 +18,7 @@ const AdminTestimonials = () => {
   const handleFormSubmit = async (testimonial) => {
     console.log('Form submitted:', testimonial); // Log submitted testimonial
     try {
-      const response = await fetch("http://localhost:5000/api/testimonials", {
+      const response = await fetch("https://gsv-12-4.onrender.com/api/testimonials", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

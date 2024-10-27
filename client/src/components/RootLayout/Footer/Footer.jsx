@@ -14,7 +14,7 @@ const Footer = () => {
   }, [location]);
 
   return (
-    <footer className="bg-gray-800  text-gray-300 py-8 md:py-16">
+    <footer className="bg-gray-800 p-4 pr-1 text-gray-300 py-8 md:py-16">
       <div className="container max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
 
         {/* Logo and Address */}

@@ -36,7 +36,7 @@ const ServiceSection = () => {
           
           {/* Image for mobile screens */}
           <img
-            src="https://img.freepik.com/free-photo/website-hosting-concept-with-bright-light_23-2149406783.jpg?t=st=1729915847~exp=1729919447~hmac=185c7c3264a193fbd012eec8e2c0d129c9f395f84a2e9476b30c352f69477b45&w=1380" // Replace this with your image URL
+            src="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038906.jpg?t=st=1730001133~exp=1730004733~hmac=21020e97f8ae6be8b5ad882ce42d39a38eecdeff47c3bb90443b15e299c4aec9&w=996" // Replace this with your image URL
             alt="Service Illustration" // Alternative text for accessibility
             className="block  w-full h-full object-cover rounded-md shadow-lg"
           />
