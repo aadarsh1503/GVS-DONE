@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import AuthContext from '../AuthContext/AuthContext';
 
 const AdminSettings = () => {
-  const { userId, authToken, userEmail } = useContext(AuthContext);
+  const { userEmail } = useContext(AuthContext);
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-  const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false); // For delete confirmation
+  const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
 
   const navigate = useNavigate();
 
@@ -22,19 +22,13 @@ const AdminSettings = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!userId || !authToken) {
-      setMessage('User not authenticated. Please log in.');
-      return;
-    }
-
     try {
       const response = await fetch('https://gsv-12-4.onrender.com/api/admin/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${authToken}`,
         },
-        body: JSON.stringify({ username: email, password, userId }),
+        body: JSON.stringify({ username: email, password }),
       });
 
       const data = await response.json();
@@ -54,17 +48,9 @@ const AdminSettings = () => {
 
   // Handle account deletion with confirmation
   const handleDeleteAccount = async () => {
-    if (!userId || !authToken) {
-      setMessage('User not authenticated. Please log in.');
-      return;
-    }
-
     try {
-      const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/${userId}`, {
+      const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/delete-account`, {
         method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${authToken}`,
-        },
       });
 
       if (response.ok) {

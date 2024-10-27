@@ -43,10 +43,10 @@ const Testimonials = () => {
 
       <div className="relative z-10 flex flex-col items-center">
         <h2 className="text-xl md:text-3xl lg:text-5xl font-bold text-white lg:mt-0 mt-10 mb-4 lg:mb-6 animate-pulse text-center">
-          OVER 10,000 SATISFIED CUSTOMERS TRUST GSV
+          OVER 10,000 SATISFIED CUSTOMERS TRUST GVS
         </h2>
         <p className="text-white text-sm md:text-lg mb-6 lg:mb-10 opacity-90 text-center">
-          What do REAL customers have to say about GSV's services?
+          What do REAL customers have to say about GVS's services?
         </p>
 
         {/* Navigation buttons for mobile view, centered above the testimonials */}
