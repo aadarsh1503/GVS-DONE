@@ -22,10 +22,10 @@ const ProjectCTA = () => {
       
       {/* Bottom Links */}
       <div className="absolute bottom-64 w-full flex justify-between px-8 text-xs lg:text-sm text-gray-700">
-  <span className="flex lg:ml-96 text-4xl items-center">
+  <span className="flex lg:ml-96 lg:text-4xl text-2xl items-center">
     Follow <a href="https://www.linkedin.com/company/global-vision-solutions" target="_blank" rel="noopener noreferrer" className="text-blue-600 ml-1"><FaLinkedin /></a>
   </span>
-  <span className="flex text-4xl lg:mr-64 items-center">
+  <span className="flex lg:text-4xl text-2xl lg:mr-64 items-center">
     Go Next: <a href="/ourWork" className="text-blue-600 ml-1">OUR WORK</a>
   </span>
 </div>

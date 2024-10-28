@@ -45,7 +45,7 @@ const Testimonials4 = () => {
     <div className="bg-white py-16 px-8">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-7xl font-bold text-gray-900"><span className='text-blue-500'>CLIENTS</span> SAY</h1>
+        <h1 className="lg:text-7xl text-4xl font-bold text-gray-900"><span className='text-blue-500'>CLIENTS</span> SAY</h1>
         <p className="text-gray-600 uppercase text-sm mb-10 tracking-widest mt-2">
           [Selected testimonials from Clutch and our work]
         </p>

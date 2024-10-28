@@ -49,7 +49,7 @@ const Hero = () => {
                 {/* Mobile Specific Styles (Visible only on small screens) */}
                 <motion.div 
                     className="absolute font-semibold text-xl text-left ml-44 bg-opacity-80 md:hidden flex flex-col items-center"
-                    style={{ bottom: '4%', color: '#1388c2', left: '50%', transform: 'translateX(-50%)', y: textY }} // Apply the Y transformation
+                    style={{ bottom: '4%', color: '#1388c2', left: '5%', transform: 'translateX(-50%)', y: textY }} // Apply the Y transformation
                 >
                     <p className="whitespace-nowrap">Software Development |</p>
                     <p className="whitespace-nowrap">Web & eCommerce Solutions |</p>

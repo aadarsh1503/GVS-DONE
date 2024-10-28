@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         {/* Left section with links */}
-        <div className="flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           <a href="ourWork" className="hover:text-blue-700 transition-colors">
             Our Work
           </a>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         {/* Center logo with bouncing animation */}
         <span
-          className="text-2xl font-bold animate-bounce" // Tailwind built-in bounce animation
+          className="lg:text-2xl text-lg font-bold animate-bounce" // Tailwind built-in bounce animation
           style={{ color: '#1388c2' }}
         >
           Global Vision Solution
@@ -71,7 +71,7 @@ const Navbar = () => {
             </button>
           </a>
 
-          {/* Menu icon */}
+          {/* Menu icon (Hamburger or Close) - Now visible on all screen sizes */}
           <div onClick={toggleMenu} className="text-2xl cursor-pointer">
             {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
@@ -90,66 +90,66 @@ const Navbar = () => {
         </div>
 
         {/* Overlay content with 3 rows and 2 columns */}
-        <div className="grid grid-cols-1 gap-y-12 text-4xl font-bold text-gray-800 max-w-3xl w-full">
+        <div className="grid grid-cols-1 gap-y-8 text-2xl font-bold text-gray-800 max-w-3xl w-full md:text-4xl md:gap-y-12">
           {/* Row 1 */}
-          <div className="grid grid-cols-2 gap-x-20 items-center">
+          <div className="grid lg:grid-cols-2 grid-col-1 gap-x-6 items-center">
             <div className="flex flex-col items-center">
               <a href='/ourWork'>
-              <span>OUR WORK</span>
+                <span className="text-lg md:text-4xl">OUR WORK</span>
               </a>
-              <span className="text-sm font-normal">(200+)</span>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <span className="text-xs font-normal md:text-sm">(200+)</span>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
             <div className="flex flex-col items-center">
               <a href='/services'>
-              <span>SERVICES</span>
+                <span className="text-lg md:text-4xl">SERVICES</span>
               </a>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
           </div>
 
           {/* Row 2 */}
-          <div className="grid grid-cols-3 gap-x-10 items-center">
+          <div className="grid lg:grid-cols-3 grid-col-1 gap-x-4 items-center">
             <div className="flex flex-col items-center">
-            <a href='/company'>
-              <span>ABOUT</span>
+              <a href='/company'>
+                <span className="text-lg md:text-4xl">ABOUT</span>
               </a>
-              <span className="text-sm font-normal">(© 200+)</span>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <span className="text-xs font-normal md:text-sm">(© 200+)</span>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
             <div className="flex flex-col items-center">
               <a href='blogs'>
-              <span>BLOG</span>
+                <span className="text-lg md:text-4xl">BLOG</span>
               </a>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
             <div className="flex flex-col items-center">
               <a href='/whyGvs'>
-              <span>WHY GVS?</span>
+                <span className="text-lg md:text-4xl">WHY GVS?</span>
               </a>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
           </div>
 
           {/* Row 3 */}
-          <div className="grid grid-cols-2 gap-x-20 items-center">
+          <div className="grid lg:grid-cols-2 grid-col-1 gap-x-6 items-center">
             <div className="flex flex-col items-center">
               <a href='/testimonials'>
-              <span>TESTIMONIALS</span>
+                <span className="text-lg md:text-4xl">TESTIMONIALS</span>
               </a>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
             <div className="flex flex-col items-center">
               <a href='/contactUs'>
-              <span>CONTACT</span>
+                <span className="text-lg md:text-4xl">CONTACT</span>
               </a>
-              <div className="w-20 h-px bg-gray-400 mt-2"></div>
+              <div className="w-12 md:w-20 h-px bg-gray-400 mt-2"></div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-8 text-sm font-light text-gray-500 flex space-x-4">
+        <div className="absolute bottom-8 text-xs font-light text-gray-500 flex space-x-2 md:text-sm">
           <span>© 2024 GVS, INC. ALL RIGHTS RESERVED.</span>
           <span>/</span>
           <a href="#security" className="hover:text-blue-700">SECURITY</a>
