@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import AuthContext from '../AuthContext/AuthContext';
 
 const AdminSettings = () => {
-  const { userEmail } = useContext(AuthContext);
+  const { userEmail, token, userId } = useContext(AuthContext); // Access token and userId from AuthContext
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ const AdminSettings = () => {
     setMessage('');
   };
 
-  // Handle form submission
+  // Handle form submission (register admin)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -47,25 +47,30 @@ const AdminSettings = () => {
   };
 
   // Handle account deletion with confirmation
-  const handleDeleteAccount = async () => {
-    try {
-      const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/delete-account`, {
-        method: 'DELETE',
-      });
+  // Handle account deletion with confirmation
+const handleDeleteAccount = async () => {
+  try {
+    const response = await fetch(`https://gsv-12-4.onrender.com/api/admin/${userId}`, {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${token}`, // Pass token in the Authorization header
+      },
+    });
 
-      if (response.ok) {
-        setMessage('Your account has been deleted successfully.');
-        setTimeout(() => {
-          navigate('/admin');
-        }, 2000);
-      } else {
-        const data = await response.json();
-        setMessage(data.message || 'Failed to delete account.');
-      }
-    } catch (error) {
-      setMessage('An error occurred while deleting the account.');
+    if (response.ok) {
+      setMessage('Your account has been deleted successfully.');
+      setTimeout(() => {
+        navigate('/admin'); // Navigate to /admin immediately after showing the message
+      }, 1500); // Adjust the delay if needed
+    } else {
+      const data = await response.json();
+      setMessage(data.message || 'Failed to delete account.');
     }
-  };
+  } catch (error) {
+    setMessage('An error occurred while deleting the account.');
+  }
+};
+
 
   // Show confirmation before deleting account
   const confirmDelete = () => {

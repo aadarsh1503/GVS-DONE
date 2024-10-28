@@ -98,14 +98,14 @@ const Blog = () => {
           </div>
 
           <div className="flex flex-col justify-center space-y-4">
-            <h2 id="category-heading" className="text-4xl font-bold text-gray-800 hover:text-purple-700 transition-colors">
+            <h2 id="category-heading" className="text-4xl font-bold text-gray-800 hover:text-blue-700 transition-colors">
               {heading}
             </h2>
             <p id="category-description" className="text-gray-600 text-lg">
               {description}
             </p>
             <p id="category-author" className="text-sm text-gray-500">
-              {date} &nbsp;|&nbsp; <span className="text-gray-700 font-bold hover:text-purple-700">{author}</span>
+              {date} &nbsp;|&nbsp; <span className="text-gray-700 font-bold hover:text-blue-700">{author}</span>
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ const Blog = () => {
 
       <section id="blog-content" className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-8">
         {blogs.map((blog) => (
-          <div key={blog._id} className="bg-white rounded-lg  shadow-[0_10px_25px_rgba(255,168,47,0.3)] transition-transform transform hover:scale-105 hover:shadow-[0_15px_30px_rgba(255,168,47,0.4)] p-6">
+          <div key={blog._id} className="bg-white rounded-lg  shadow-[0_10px_25px_rgba(51, 42, 226, 0.91)] transition-transform transform hover:scale-105 hover:shadow-[0_15px_30px_rgba(24, 7, 205, 0.4)] p-6">
             <img
               src={blog.image}
               alt={blog.title}
@@ -122,9 +122,9 @@ const Blog = () => {
             <h3 className="text-xl font-bold text-gray-800 hover:text-orange-500 transition-colors">{blog.title}</h3>
             <p className="text-gray-600 mb-4">{blog.description}</p>
             <p className="text-sm text-gray-500 mb-4">
-              {new Date(blog.date).toLocaleDateString()} &nbsp;|&nbsp; <span className="text-gray-700 font-bold hover:text-orange-500">{blog.author}</span>
+              {new Date(blog.date).toLocaleDateString()} &nbsp;|&nbsp; <span className="text-gray-700 font-bold hover:text-blue-500">{blog.author}</span>
             </p>
-            <i className={`${blog.icon} text-orange-500 text-2xl`}></i>
+            <i className={`${blog.icon} text-blue-500 text-2xl`}></i>
           </div>
         ))}
       </section>

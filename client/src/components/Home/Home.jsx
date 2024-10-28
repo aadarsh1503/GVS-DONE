@@ -6,17 +6,23 @@ import Testimonals from '../Testimonals/Testimonals'
 import ContactForm from '../Contactus/Contactus'
 import Slide from '../Slider/Slider'
 import ServiceDifferentiators from '../ServiceDifferentiators/ServiceDifferentiators'
+import ProjectsComponent from '../ProjectComponent/ProjectComponent'
+import ExpertiseComponent from '../ExpertiseComponent/ExpertiseComponent'
+import ProjectCTA from '../ProjectCta/ProjectCta'
+import Testimonials4 from '../Testimonials4/Testimonials4'
 
 const Home = () => {
   return (
     <div>
         <HeroSection />
 <Slide />
-<Hero1 />
+<ProjectsComponent />
+<ExpertiseComponent />
 <WhyChooseUs />
 <ServiceDifferentiators />
-<Testimonals />
-<ContactForm />
+<Testimonials4 />
+<ProjectCTA />
+
 
     </div>
   )

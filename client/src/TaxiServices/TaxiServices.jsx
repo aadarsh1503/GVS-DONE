@@ -15,6 +15,7 @@ import ssl from "../../src/assets/Images/ssl.jpg";
 import reg from "../../src/assets/Images/register.png";
 import car from "../../src/assets/Images/car.png";
 import diagram from "../../src/assets/Images/diagram1.png";
+import Picture3 from "./Picture3.png"
 
 
 
@@ -48,7 +49,7 @@ const Taxiservices = () => {
           <div className="relative w-full lg:w-[600px] md:w-[600px] h-[400px] overflow-hidden rounded-lg">
           <img
               className="absolute w-full h-full object-contain rounded-lg"
-              src={ride} 
+              src={Picture3} 
               alt="blablacar Clone App"  
             />
           </div>         
@@ -335,7 +336,7 @@ const Taxiservices = () => {
 <section>
 <div class="bg-white mt-20 p-20">
    <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-          Frequently <span className="text-red-500">Asked Questions </span>
+          Frequently <span className="text-blue-500">Asked Questions </span>
           </h2>
     <div class="space-y-4">
          {/* FAQ 1  */}

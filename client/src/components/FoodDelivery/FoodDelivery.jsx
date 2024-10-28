@@ -8,6 +8,7 @@ import FoodFeature from './FoodFeature';
 import FoodCarts from './FoodCarts';
 import FoodService from './FoodService';
 import FoodFAQ from './FoodFAQ';
+import Picture4 from "./Picture4.png"
 
 
 const FoodDelivery = () => {
@@ -44,7 +45,7 @@ const FoodDelivery = () => {
                         <div className="flex justify-center w-full md:w-[600px] lg:w-[600px] h-[300px] md:h-[500px] overflow-hidden rounded-lg">
                             <img
                                 className="w-full h-full object-contain rounded-lg"
-                                src="https://img.freepik.com/premium-photo/smartphone-screen-food-delivery-selective-focus_472916-43314.jpg?w=360"
+                                src={Picture4}
                                 alt="Food delivery Clone App"
                             />
                         </div>
@@ -125,16 +126,16 @@ const FoodDelivery = () => {
                         </div>
 
                         {/* 67% Block */}
-                        <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg shadow-md text-center">
-                            <FontAwesomeIcon icon={faCreditCard} className="text-orange-500 text-3xl mb-2" />
-                            <h3 className="text-4xl font-bold text-orange-500">67%</h3>
+                        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-md text-center">
+                            <FontAwesomeIcon icon={faCreditCard} className="text-blue-500 text-3xl mb-2" />
+                            <h3 className="text-4xl font-bold text-blue-500">67%</h3>
                             <p className="mt-2 text-gray-600">Reduction in Social Media Marketing Expenses</p>
                         </div>
 
                         {/* 60% Block */}
-                        <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg shadow-md text-center">
-                            <FontAwesomeIcon icon={faStar} className="text-green-500 text-3xl mb-2" />
-                            <h3 className="text-4xl font-bold text-green-500">60%</h3>
+                        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-md text-center">
+                            <FontAwesomeIcon icon={faStar} className="text-blue-500 text-3xl mb-2" />
+                            <h3 className="text-4xl font-bold text-blue-500">60%</h3>
                             <p className="mt-2 text-gray-600">Quarterly Rise in No. of Repeat Customers</p>
                         </div>
 

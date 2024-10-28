@@ -145,7 +145,7 @@ const Company = () => {
           <h2 className="text-4xl font-bold text-gray-900">Are you ready to take your business to the next level?</h2>
           <p className="mt-4 mb-4 text-lg text-gray-600">Get in touch with us today to discuss your project!</p>
         </div>
-        <a href="/contactUs" className="bg-red-500 text-white rounded-lg py-2 px-4 hover:bg-red-600 transition duration-300">Contact Us</a>
+        <a href="/contactUs" className="bg-blue-500 text-white rounded-lg py-2 px-4 hover:bg-blue-800 transition duration-300">Contact Us</a>
       </section>
     </div>
   );

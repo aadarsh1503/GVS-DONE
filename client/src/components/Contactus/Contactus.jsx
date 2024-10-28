@@ -372,7 +372,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="bg-gradient-to-r from-blue-600 to-gray-400 text-white lg:mb-0 py-4 px-8 rounded-lg text-lg font-semibold shadow hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+              className="bg-blue-600 text-white lg:mb-0 py-4 px-8 rounded-lg text-lg font-semibold shadow hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
             >
               Submit
             </button>

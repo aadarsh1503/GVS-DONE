@@ -25,6 +25,7 @@ const ProjectMarketingSection = () => {
   }, []);
 
   return (
+    <div>
     <div ref={sectionRef} className="bg-white text-black min-h-screen flex flex-col justify-center px-12">
       {/* Main heading */}
       <div className="text-center">
@@ -92,17 +93,29 @@ const ProjectMarketingSection = () => {
       </div>
 
       {/* Explore Services Section */}
-      <div className="mt-12 max-w-xl mx-auto bg-white p-6 rounded-lg">
+      <div className="mt-12 lg:mr-12 max-w-xl mx-auto bg-white p-6 rounded-lg">
         <h2 className="text-black text-4xl font-bebas text-center mb-6">
           Explore Our Project Marketing Services
         </h2>
         <div className="flex justify-center space-x-4">
-          <a href="/productMarketing" className="flex flex-col outline-2 border outline items-center transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4">
+          <a href="/productMarketing" className="flex flex-col outline-2 border outline items-center transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4">
             <FaChartLine className="text-black text-3xl mb-2" />
             <span className="text-black hover:text-black text-center">Marketing Services</span>
           </a>
         </div>
       </div>
+
+      {/* Additional Image Section */}
+   
+    </div>
+    <div className="lg:pr-10 lg:-mt-40 flex justify-start">
+  <img
+    src="https://www.datocms-assets.com/57452/1642287853-fa-1x1.jpg?fm=webp"
+    alt="Marketing Visual"
+    className="w-[400px] h-auto rounded-md shadow-lg"
+  />
+</div>
+
     </div>
   );
 };

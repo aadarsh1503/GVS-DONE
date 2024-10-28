@@ -98,21 +98,22 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto bg-white p-6 rounded-lg mb-32">
+      <div className="max-w-xl lg:mr-8 mx-auto bg-white p-6 rounded-lg mb-32">
         <h2 className="text-black font-bebas text-4xl text-center mb-6">
           Explore Our Web Development Services
         </h2>
         <div className="flex flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <a href="/ecommerce" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4">
+          <a href="/ecommerce" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4">
             <FaLaptopCode className="text-black text-3xl mb-2" />
             <span className="text-black hover:text-black text-center">E Commerce</span>
           </a>
-          <a href="/webDev" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4">
+          <a href="/webDev" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4">
             <FaServer className="text-black text-3xl mb-2" />
             <span className="text-black hover:text-black text-center">Web Services</span>
           </a>
         </div>
       </div>
+
 
       {/* Inline CSS for Downward Bouncing Arrows */}
       <style jsx>{`
@@ -153,6 +154,15 @@ const WebDevelopment = () => {
           }
         }
       `}</style>
+
+<div className="lg:pr-10 lg:-mt-72 lg:mb-10 flex justify-start">
+  <img
+    src="https://www.datocms-assets.com/57452/1642288715-ttl-1x1.jpeg?fm=webp"
+    alt="Marketing Visual"
+    className="w-[400px] h-auto rounded-md shadow-lg"
+  />
+</div>
+
     </div>
   );
 };

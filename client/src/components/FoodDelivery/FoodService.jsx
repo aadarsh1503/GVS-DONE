@@ -48,7 +48,7 @@ const FoodService = () => {
     <div className="py-10 bg-white rounded-xl ">
       {/* Heading for the section */}
       <h2 className="text-3xl font-bold text-center rounded-xl text-black mb-2">
-        Why Choose <span className="text-blue-500">GSV </span>?
+        Why Choose <span className="text-blue-500">GVS </span>?
       </h2>
   
       {/* Subheading line */}
@@ -61,13 +61,13 @@ const FoodService = () => {
       <div className="flex flex-col md:flex-row justify-center rounded-xl items-start">
         <div className="max-w-4xl w-full flex flex-col rounded-xl md:flex-row mx-auto">
           {/* Left-side Menu */}
-          <div className="w-full md:w-1/4 bg-red-200 rounded-xl p-5">
+          <div className="w-full md:w-1/4 bg-blue-200 rounded-xl p-5">
             <ul>
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className={`p-4 cursor-pointer hover:bg-red-500 hover:text-white font-serif transition-colors ${
-                    selectedService.title === service.title ? "bg-red-500 text-white" : ""
+                  className={`p-4 cursor-pointer hover:bg-blue-500 hover:text-white font-serif transition-colors ${
+                    selectedService.title === service.title ? "bg-blue-500 text-white" : ""
                   }`}
                   onMouseEnter={() => setSelectedService(service)}
                 >
@@ -94,7 +94,7 @@ const FoodService = () => {
                 ))}
               </ul>
               {/* Button */}
-              <button className="mt-6 px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600">
+              <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700">
                 Book a Free Demo
               </button>
             </div>

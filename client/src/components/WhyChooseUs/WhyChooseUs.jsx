@@ -3,32 +3,32 @@ import { FaLaptopCode, FaBullhorn, FaUsersCog, FaClipboardList, FaRocket, FaChar
 
 const features = [
     {
-        icon: <FaLaptopCode className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaLaptopCode className="text-blue-500 text-5xl mb-4" />,
         title: 'Innovative Web Solutions',
         description: 'We deliver cutting-edge web applications tailored to your business needs, enhancing user engagement and functionality.'
     },
     {
-        icon: <FaBullhorn className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaBullhorn className="text-blue-500 text-5xl mb-4" />,
         title: 'Strategic Marketing Expertise',
         description: 'Our marketing strategies focus on reaching your target audience effectively, driving traffic and conversions.'
     },
     {
-        icon: <FaUsersCog className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaUsersCog className="text-blue-500 text-5xl mb-4" />,
         title: 'Customer-Centric Approach',
         description: 'We prioritize customer feedback and insights to create solutions that resonate with your audience and drive loyalty.'
     },
     {
-        icon: <FaClipboardList className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaClipboardList className="text-blue-500 text-5xl mb-4" />,
         title: 'Comprehensive Analytics',
         description: 'Utilize our advanced analytics tools to gain valuable insights into user behavior and campaign performance.'
     },
     {
-        icon: <FaRocket className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaRocket className="text-blue-500 text-5xl mb-4" />,
         title: 'Rapid Prototyping',
         description: 'We offer fast prototyping services to bring your ideas to life quickly and efficiently, minimizing time to market.'
     },
     {
-        icon: <FaChartLine className="text-teal-500 text-5xl mb-4" />,
+        icon: <FaChartLine className="text-blue-500 text-5xl mb-4" />,
         title: 'Growth-Driven Strategies',
         description: 'Our data-driven strategies are designed to scale your business, focusing on sustainable growth and performance.'
     },

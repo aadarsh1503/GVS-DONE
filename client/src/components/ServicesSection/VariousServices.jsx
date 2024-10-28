@@ -77,7 +77,7 @@ const VariousServices = () => {
               <span className="text-blue-600 font-bold text-lg mr-4">{`0${service.id}`}</span>
               {/* Service name aligned next to the number with hover effect */}
               <span 
-                className={`text-3xl font-bold transition duration-300 ${hoveredServiceId === service.id ? 'underline text-yellow-400' : 'text-black'}`}
+                className={`text-3xl font-bold transition duration-300 ${hoveredServiceId === service.id ? 'underline text-blue-400' : 'text-black'}`}
               >
                 {service.name}
               </span>

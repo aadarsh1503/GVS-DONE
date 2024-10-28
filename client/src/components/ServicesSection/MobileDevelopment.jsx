@@ -91,25 +91,32 @@ const MobileDevelopment = () => {
       </div>
 
       {/* Explore Our Apps and Services Section */}
-      <div className="mt-12 max-w-xl mx-auto bg-white p-6 rounded-lg">
+      <div className="mt-12 max-w-xl  mx-auto bg-white p-6 rounded-lg">
         <h2 className="text-black text-3xl lg:text-4xl text-center font-bebas mb-6">
           <a href="#" className="hover:text-teal-400">Explore Our Apps and Services</a>
         </h2>
         <div className="flex flex-col lg:flex-row justify-center space-x-0 lg:space-x-4">
-          <a href="/mobileApp" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
+          <a href="/mobileApp" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
             <FaRocket className="text-black  hover:text-black text-3xl mb-2" />
             <span className="text-black hover:text-black">Explore Service</span>
           </a>
-          <a href="/taxiServices" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
+          <a href="/taxiServices" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
             <FaTaxi className="text-black text-3xl hover:text-black mb-2" />
             <span className="text-black hover:text-black">Taxi Service App</span>
           </a>
-          <a href="/foodDelivery" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-teal-400 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
+          <a href="/foodDelivery" className="flex flex-col items-center outline-2 border outline transition duration-300 ease-in-out transform hover:bg-blue-500 hover:text-black rounded-md p-4 mb-4 lg:mb-0">
             <FaUtensils className="text-black text-3xl hover:text-black mb-2" />
             <span className="text-black hover:text-black">Food Delivery App</span>
           </a>
         </div>
       </div>
+      <div className="lg:pr-10 lg:ml-72 lg:-mt- flex justify-start">
+  <img
+    src="https://www.datocms-assets.com/57452/1642287997-harbor-1x1.jpg?fm=webp"
+    alt="Marketing Visual"
+    className="w-[400px] h-auto rounded-md shadow-lg"
+  />
+</div>
 
     </div>
   );

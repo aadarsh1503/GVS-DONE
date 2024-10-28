@@ -49,7 +49,7 @@ const FoodFAQ = () => {
           <div
             key={index}
             className={`border-2 border-gray-300 rounded-lg overflow-hidden transition-all duration-500 shadow-md ${
-              openIndex === index ? "bg-gradient-to-r from-orange-100 to-red-100" : "bg-white"
+              openIndex === index ? "bg-gradient-to-r from-blue-100 to-blue-100" : "bg-white"
             }`}
           >
             <button

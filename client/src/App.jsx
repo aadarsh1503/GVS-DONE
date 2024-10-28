@@ -22,6 +22,9 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
 import ServiceDifferentiators from './components/ServiceDifferentiators/ServiceDifferentiators';
+import WorkSection from './components/OurWork/OurWork';
+import WhyGsv from './components/WhyGsv/WhyGsv';
+
 
 function App() {
   return (
@@ -47,6 +50,8 @@ function App() {
             <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
             <Route path="/termsConditions" element={<TermsAndConditions />} />
             <Route path="/serviceDifferentiators" element={<ServiceDifferentiators />} />
+            <Route path="/ourWork" element={<WorkSection />} />
+            <Route path="/whyGvS" element={<WhyGsv />} />
 
             {/* Redirect to Dashboard or Admin */}
             <Route

@@ -1,0 +1,18 @@
+.group:hover .group-hover\:block {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .relative {
+    position: relative; /* Required for dropdown positioning */
+  }
+  
+  .absolute {
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav item */
+    left: 0; /* Align left */
+    background-color: #ffffff; /* Dropdown background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 10; /* Keep dropdown on top */
+  }
+  

@@ -343,7 +343,7 @@ const Web = () => {
 <section>
   <div className="bg-white mt-20 p-20">
     <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-      Frequently <span className="text-red-500">Asked Questions</span>
+      Frequently <span className="text-blue-500">Asked Questions</span>
     </h2>
     <div className="space-y-4">
       {/* FAQ 1 */}

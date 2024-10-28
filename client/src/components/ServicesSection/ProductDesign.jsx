@@ -91,17 +91,25 @@ const ProductDesign = () => {
         </div>
       </div>
 
-      <div className="mt-12 max-w-xl mx-auto bg-white text-black p-6 rounded-lg">
+      <div className="mt-12 max-w-xl lg:mr-12 mx-auto bg-white text-black p-6 rounded-lg">
         <h2 className="text-black text-4xl font-bebas text-center mb-6">
           Explore Our Product Design Services
         </h2>
         <div className="flex justify-center space-x-4">
-          <a href="/designProduct" className="flex flex-col items-center transition duration-300 ease-in-out transform outline-2 border outline hover:bg-teal-400 hover:text-black rounded-md p-4">
+          <a href="/designProduct" className="flex flex-col items-center transition duration-300 ease-in-out transform outline-2 border outline hover:bg-blue-500 hover:text-black rounded-md p-4">
             <FaUserCog className="text-black text-3xl mb-2" />
             <span className="text-black hover:text-black text-center">User Experience Design</span>
           </a>
         </div>
       </div>
+      <div className="lg:pr-10 lg:-mt-40 flex justify-start">
+  <img
+    src="https://www.datocms-assets.com/57452/1642288573-stilllife-16x9.jpg?fm=webp"
+    alt="Marketing Visual"
+    className="w-[400px] h-auto rounded-md shadow-lg"
+  />
+</div>
+
     </div>
   );
 };

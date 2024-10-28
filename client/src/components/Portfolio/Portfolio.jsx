@@ -24,7 +24,7 @@ const PortfolioSection = () => {
           {/* Features Section with Icons */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <AiOutlineMobile className="text-red-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineMobile className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">Mobile-First Approach</h3>
                 <p className="text-black text-sm font-poppins">Every design is optimized for mobile users.</p>
@@ -32,7 +32,7 @@ const PortfolioSection = () => {
             </div>
 
             <div className="flex items-center">
-              <AiOutlineShoppingCart className="text-green-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineShoppingCart className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">E-Commerce Solutions</h3>
                 <p className="text-black text-sm font-poppins">We build robust platforms that drive sales and engagement.</p>
@@ -79,7 +79,7 @@ const PortfolioSection = () => {
           {/* Features Section with Icons */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <AiOutlineCode className="text-red-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineCode className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">Agile Development</h3>
                 <p className="text-black text-sm font-poppins">Our iterative process ensures quick delivery and adaptability.</p>
@@ -87,7 +87,7 @@ const PortfolioSection = () => {
             </div>
 
             <div className="flex items-center">
-              <AiOutlineDatabase className="text-green-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineDatabase className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">Database Management</h3>
                 <p className="text-black text-sm font-poppins">We design and manage databases for seamless data operations.</p>
@@ -116,7 +116,7 @@ const PortfolioSection = () => {
           {/* Features Section with Icons */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <AiOutlineBulb className="text-red-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineBulb className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">Targeted Campaigns</h3>
                 <p className="text-black text-sm font-poppins">Reach your audience effectively with tailored marketing campaigns.</p>
@@ -124,7 +124,7 @@ const PortfolioSection = () => {
             </div>
 
             <div className="flex items-center">
-              <AiOutlineLineChart className="text-green-500 text-2xl mr-4" /> {/* Decreased size */}
+              <AiOutlineLineChart className="text-blue-500 text-2xl mr-4" /> {/* Decreased size */}
               <div>
                 <h3 className="text-lg font-semibold font-poppins">Data-Driven Insights</h3>
                 <p className="text-black text-sm font-poppins">Utilize analytics to optimize your marketing efforts and maximize ROI.</p>

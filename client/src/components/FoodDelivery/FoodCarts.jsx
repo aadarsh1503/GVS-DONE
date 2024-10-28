@@ -23,7 +23,7 @@ const FoodCarts = () => {
   return (
     <div className=" py-16 px-4 bg-white sm:px-6 lg:px-8">
       <h2 className="text-4xl mx-auto max-w-4xl  font-bold text-center text-black mb-2">
-      Start, Scale and Grow your Food Business <span className="text-blue-500">With GSV</span> 
+      Start, Scale and Grow your Food Business <span className="text-blue-500">With GVS</span> 
       </h2>
       <p className='mt-4 lg:ml-72 mb-12 font-serif text-white'>Whether you own a small bakery or a 5-star restaurant, our food delivery applications are designed for all kinds of businesses in the food industry.
 
